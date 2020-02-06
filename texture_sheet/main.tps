@@ -181,10 +181,16 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../src/raw_asset/1.png</key>
-            <key type="filename">../src/raw_asset/2.png</key>
-            <key type="filename">../src/raw_asset/3.png</key>
-            <key type="filename">../src/raw_asset/4.png</key>
+            <key type="filename">../src/blocks/01.png</key>
+            <key type="filename">../src/blocks/02.png</key>
+            <key type="filename">../src/blocks/03.png</key>
+            <key type="filename">../src/blocks/04.png</key>
+            <key type="filename">../src/blocks/05.png</key>
+            <key type="filename">../src/blocks/06.png</key>
+            <key type="filename">../src/blocks/07.png</key>
+            <key type="filename">../src/blocks/08.png</key>
+            <key type="filename">../src/blocks/09.png</key>
+            <key type="filename">../src/blocks/10.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -193,13 +199,15 @@
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>6,6,13,13</rect>
+                <rect>30,30,60,61</rect>
                 <key>scale9Paddings</key>
-                <rect>6,6,13,13</rect>
+                <rect>30,30,60,61</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../src/raw_asset/box_bg.png</key>
+            <key type="filename">../src/blocks/12.png</key>
+            <key type="filename">../src/blocks/13.png</key>
+            <key type="filename">../src/blocks/box_bg.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -208,16 +216,16 @@
                 <key>scale9Enabled</key>
                 <false/>
                 <key>scale9Borders</key>
-                <rect>8,8,15,15</rect>
+                <rect>30,30,60,60</rect>
                 <key>scale9Paddings</key>
-                <rect>8,8,15,15</rect>
+                <rect>30,30,60,60</rect>
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
         </map>
         <key>fileList</key>
         <array>
-            <filename>../src/raw_asset</filename>
+            <filename>../src/blocks</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
