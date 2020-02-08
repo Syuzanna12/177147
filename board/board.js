@@ -1,5 +1,6 @@
 import { BOARD_DIMENSIONS } from "../src/constants";
 import { Cell } from "./cell";
+import { Cube } from "./cube";
 
 export class Board extends Phaser.GameObjects.Container {
   constructor(scene) {
@@ -26,6 +27,8 @@ export class Board extends Phaser.GameObjects.Container {
       }
 
       this._cells.push(column);
+      const cube = new Cube(this.scene);
+      this._cells[0][0].addCube(cube);
     }
   }
 }

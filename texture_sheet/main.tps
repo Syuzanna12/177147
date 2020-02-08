@@ -181,16 +181,16 @@
         </struct>
         <key>individualSpriteSettings</key>
         <map type="IndividualSpriteSettingsMap">
-            <key type="filename">../src/blocks/01.png</key>
-            <key type="filename">../src/blocks/02.png</key>
-            <key type="filename">../src/blocks/03.png</key>
-            <key type="filename">../src/blocks/04.png</key>
-            <key type="filename">../src/blocks/05.png</key>
-            <key type="filename">../src/blocks/06.png</key>
-            <key type="filename">../src/blocks/07.png</key>
-            <key type="filename">../src/blocks/08.png</key>
-            <key type="filename">../src/blocks/09.png</key>
-            <key type="filename">../src/blocks/10.png</key>
+            <key type="filename">../src/raw_asset/01.png</key>
+            <key type="filename">../src/raw_asset/02.png</key>
+            <key type="filename">../src/raw_asset/03.png</key>
+            <key type="filename">../src/raw_asset/04.png</key>
+            <key type="filename">../src/raw_asset/05.png</key>
+            <key type="filename">../src/raw_asset/06.png</key>
+            <key type="filename">../src/raw_asset/07.png</key>
+            <key type="filename">../src/raw_asset/08.png</key>
+            <key type="filename">../src/raw_asset/09.png</key>
+            <key type="filename">../src/raw_asset/10.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -205,9 +205,10 @@
                 <key>scale9FromFile</key>
                 <false/>
             </struct>
-            <key type="filename">../src/blocks/12.png</key>
-            <key type="filename">../src/blocks/13.png</key>
-            <key type="filename">../src/blocks/box_bg.png</key>
+            <key type="filename">../src/raw_asset/12.png</key>
+            <key type="filename">../src/raw_asset/13.png</key>
+            <key type="filename">../src/raw_asset/box_bg.png</key>
+            <key type="filename">../src/raw_asset/cub.png</key>
             <struct type="IndividualSpriteSettings">
                 <key>pivotPoint</key>
                 <point_f>0.5,0.5</point_f>
@@ -225,7 +226,7 @@
         </map>
         <key>fileList</key>
         <array>
-            <filename>../src/blocks</filename>
+            <filename>../src/raw_asset</filename>
         </array>
         <key>ignoreFileList</key>
         <array/>
