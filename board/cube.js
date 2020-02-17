@@ -15,7 +15,7 @@ export class Cube extends Phaser.GameObjects.Container {
   _buildBg() {
     const bg = this.scene.add.image(0, 0, TEXTURE, "cub.png");
     this.add((this._bg = bg));
-    bg.setTint("#FF45CB");
+    bg.setTint("#04114B");
   }
 
   _buildText() {

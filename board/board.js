@@ -7,7 +7,9 @@ export class Board extends Phaser.GameObjects.Container {
     super(scene);
 
     this._cells = [];
+    this.flipped = []; //aj dzax
     this._buildBoard();
+    this._makeCubes();
   }
 
   _buildBoard() {
@@ -27,8 +29,55 @@ export class Board extends Phaser.GameObjects.Container {
       }
 
       this._cells.push(column);
-      const cube = new Cube(this.scene);
-      this._cells[0][0].addCube(cube);
     }
+  }
+
+  getRandomEmptyCell() {
+    const rndI = Math.floor(Math.random() * BOARD_DIMENSIONS.width);
+    const rndJ = Math.floor(Math.random() * BOARD_DIMENSIONS.height);
+    const rndCell = this._cells[rndI][rndJ];
+
+    if (!rndCell.isEmpty) {
+      return this.getRandomEmptyCell();
+    }
+
+    return rndCell;
+  }
+
+  getCellByCube(cube) {
+    for (let i = 0; i < this._cells.length; i++) {
+      const columns = this._cells[i];
+      for (let j = 0; j < columns.length; j++) {
+        const cell = columns[j];
+        if (cell.cube === cube) {
+          return cell;
+        }
+      }
+    }
+  }
+
+  _makeCubes() {
+    const emptyCells = this._getEmptyCells();
+
+    for (let i = 0; i < Math.min(2, emptyCells.length); i++) {
+      const cube = this._generateRandomCube();
+      const cell = this.getRandomEmptyCell();
+      cell.addCube(cube);
+    }
+  }
+
+  _generateRandomCube() {
+    const type = Math.floor(Math.random() * 4 + 1);
+    const cube = new Cube(this.scene, type);
+
+    return cube;
+  }
+
+  _getEmptyCells() {
+    const emptyCells = [];
+    this._cells.forEach(col => {
+      emptyCells.push(...col.filter(cell => cell.isEmpty));
+    });
+    return emptyCells;
   }
 }
